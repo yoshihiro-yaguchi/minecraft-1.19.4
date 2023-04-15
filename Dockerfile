@@ -10,4 +10,4 @@ RUN java -Xmx1024M -Xms1024M -jar /opt/BuildTools.jar --rev 1.19.4
 RUN echo eula=true > eula.txt && echo "mv /mnt/var/* /root" > firstBoot.sh && \
     echo "java -Xmx1024M -Xms1024M -jar spigot-1.19.4.jar" >> firstBoot.sh && \
     echo "mv /root/* /mnt/var" >> firstBoot.sh && chmod 777 firstBoot.sh && mkdir /mnt/var
-CMD ["sh", "firstBoot.sh"]
+# CMD ["sh", "firstBoot.sh"]
